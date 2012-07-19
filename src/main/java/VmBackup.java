@@ -284,7 +284,7 @@ public class VmBackup
   {
     String url = "https://" + host + "/folder?dcPath=ha-datacenter";
     String tData = getUrl( url );
-    Pattern pattern = Pattern.compile( "<a href=\"([^\"]+)\">(datastore[^<]+)</a>" );
+    Pattern pattern = Pattern.compile( "<a href=\"([^\"]+)\">([^<]+)</a>" );
 
     Matcher matcher = pattern.matcher( tData );
 
